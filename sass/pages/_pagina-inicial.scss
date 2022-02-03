@@ -1,0 +1,98 @@
+.cabecalho-home{
+    background: url('../img/foto-principal-2.jpg') #000 no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0;
+    padding-top: 150px;
+    &__titulo{
+        font-size: 40px;
+        margin-bottom: 0;
+        
+    }
+    &__role{
+        display: none;
+    }
+    @media(max-width: $breakpoint-sm){
+        &__titulo{
+            text-shadow: 3px 2px 3px white;
+        }
+        &__subtitulo{
+            text-shadow: 3px 2px 3px white;
+        }
+    }
+
+    @media(min-width: $breakpoint-sm){
+        &__titulo{
+            text-shadow: 3px 2px 3px white;
+        }
+        &__subtitulo{
+            text-shadow: 3px 2px 3px white;
+        }
+    }
+
+    @media(min-width: $breakpoint-md){
+        background-image: url("../img/foto-principal-2.jpg");
+        &__titulo{
+            text-shadow: 3px 2px 3px white;
+        }
+        &__subtitulo{
+            text-shadow: 3px 2px 3px white;
+        }
+    }
+
+    @media(min-width: $breakpoint-lg){
+            height: 100vh;
+            &__titulo{
+                 font-size: 60px;
+                 margin-top: 190px;
+                 
+            }
+            &__subtitulo{
+                font-size: 22px;
+                
+            }
+            &__role{
+                display: block;
+                position: absolute;
+                background: url('../img/icone-mouse.png') no-repeat center right;
+                color: #fff;
+                margin: 0 auto;
+                bottom: 10px;
+                left: 50%;
+                height: 50px;
+                width: 190px;
+                text-align: left;
+                line-height: 45px;
+                font-size: 20px;
+                text-decoration: none;
+                line-height: 45px;
+                margin-left: -95px;
+            }
+    }
+    @media(min-width: $breakpoint-xl){
+        background-image: url("../img/foto-principal-2.jpg");
+    }
+}
+
+.home{
+    &__titulo{
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        font-size: 34px;
+        &__titulo::after{
+             content: '';
+             display: block;
+             width: 50px;
+             height: 3px;
+             background-color: $cor-principal;
+             margin: 0 auto;
+             margin-top: 15px;
+        }
+        &__titulo--branco::after{
+            background-color: #fff;
+        
+        }
+    }
+}
+

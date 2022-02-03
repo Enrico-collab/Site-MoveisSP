@@ -1,0 +1,41 @@
+.pagina-cabecalho{
+    background-color: #dd3f3f;
+    background-image: url('../img/cabecalho-pagina-bg.jpg');
+    background-attachment: fixed;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.pagina-cabecalho__titulo{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Fzendo a linha embaixo do Sobre nós, utilizando pseudo elemento */
+.pagina-cabecalho__titulo::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.pagina-conteudo{
+    padding: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.pagina-conteudo p{
+    color: #3a3a3a;
+    line-height: 23px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text-center{
+    text-align: center;
+}

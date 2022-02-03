@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Móveis SP - Contato</title>
+    <!-- Linkando o arquivo style.css -->
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body class="pagina-contato">
+    <!-- Inicio seção menu -->
+    <header class="cabecalho">
+        <div class="container">
+            <a href="index.html" class="logo">Design responsivo</a>
+            <nav class="menu-principal menu-principal--fechado">
+                <button class="menu-principal__btn">Abrir/fechar</button>
+                <ul class="menu-principal__lista">
+                    <li><a class="menu-principal__item" href="index.html">Home</a></li>
+                    <li><a class="menu-principal__item" href="sobre.html">Sobre nós</a></li>
+                    <li><a class="menu-principal__item" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="menu-principal__item menu-principal__item--atual" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Fim seção menu -->
+    <main>
+        <header class="pagina-cabecalho">
+            <h1 class="pagina-cabecalho__titulo">Contato</h1>
+        </header>
+        <section class="container pagina-conteudo">
+            <div class="contato__dados">
+                <p class="text-center">A Moveis SP tem a missão de realizar o seu sonho da casa mobiliada com a melhor prestação de serviço que existe no mercado.<br>Nossa equipe é formada por profissionais que prezam pelo atendimento ao cliente de forma personalizada, acompanhando seu pedido do começo ao fim.</p>
+                <p class="text-center">Estamos localizados na Zona leste de São Paulo. Nossa loja conta com produtos em diversos estilos para ambientes internos e externos, que aliam qualidade, conforto e design, onde o clássico e o contemporâneo vivem em harmonia.
+                    Faça-nos uma visita, confira nossos produtos. Teremos o maior prazer em apresentar-lhes o que há de melhor.</p>
+            </div>
+            <div class="contato__dados">
+                <p class="text-center"><strong>Telefone:</strong> (11) 2222-5555</p>
+                <p class="text-center"><strong>E-mail:</strong> moveissp@moveissp.com.br</p>
+                <p class="text-center"><strong>Endereço:</strong> Kingston, 338 – Carrão – CEP 0010-000 – São Paulo/SP – Brasil</p>
+            </div>
+                <form action="#" class="formulario">
+                <div class="formulario__grupo formulario__grupo--coluna-esq">
+                    <label class="formulario__label" for="nome">Nome</label><br>
+                    <input class="formulario__campo" id="nome" type="text" name="nome">
+                </div>
+                <div class="formulario__grupo formulario__grupo--coluna-dir">
+                    <label class="formulario__label" for="email">E-mail</label><br>
+                    <input class="formulario__campo" id="email" type="email" name="email">
+                </div>
+                <div class="formulario__grupo">
+                    <label class="formulario__label" for="mensagem">Mensagem</label><br>
+                    <textarea class="formulario__campo" name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit" class="formulario__botao" value="Enviar"> 
+            </form>
+        </section>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.457209548401!2d-46.550500200000016!3d-23.55201729999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e7c04ddc177%3A0xb0e76f79d39fb70e!2sRua%20Asa%20Branca%2C%205%20-%20Vila%20Carrao%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003420-050!5e0!3m2!1spt-BR!2sbr!4v1635270117703!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+    </main>
+    <footer class="rodape">
+        <div class="rodape__linha-1">
+            <div class="container">
+                <div class="rodape__coluna">
+                    <a href="index.html" class="logo logo--branco">Design responsivo</a>
+                    <p>Fique à vontade! A sua casa precisa ter o seu jeitinho, não é mesmo?</p>
+                </div>
+            
+                <div class="rodape__coluna">
+                    <h2 class="rodape__titulo">Social</h2>
+                    <ul class="rodape__lista-links">
+                        <li><a class="rodape__lista-links__item" href="https:twiiter.com" target="_blank">Twitter</a></li>
+                        <li><a class="rodape__lista-links__item" href="https:facebook.com" target="_blank">Facebook</a></li>
+                        <li><a class="rodape__lista-links__item" href="https:instagram.com" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="rodape__coluna">
+                    <h2 class="rodape__titulo">Links</h2>
+                    <ul class="rodape__lista-links">
+                        <li><a class="rodape__lista-links__item" href="index.html">Home</a></li>
+                        <li><a class="rodape__lista-links__item" href="sobre.html">Sobre nós</a></li>
+                        <li><a class="rodape__lista-links__item" href="portfolio.html">Portfolio</a></li>
+                        <li><a class="rodape__lista-links__item" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="rodape__linha-2">
+            © 2021 - Todos os direitos reservados - Enrico Clemente Amoroso
+        </div>
+
+    </footer>
+    <!-- Fim seção rodapé -->
+    <!-- Linkando arquivo externo CDN - JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Linkando arquivo Slick ( sempre depois do Jquery, pois utiliza Jquery )-->
+    <script src="./js/slick.min.js"></script>
+    <!-- Linkando o arquivo importado (Jquery Validation) para validar o botão de enviar no formulário de contato -->
+    <script src="./js/jquery.validate.min.js"></script>
+    <!-- Linkando arquivo Javascript -->
+    <script src="./js/main.js"></script>   
+    
+</body>
+</html>

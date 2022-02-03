@@ -1,0 +1,24 @@
+.pagina-cabecalho{
+    background-color: $cor-principal;
+    background-image: url('../img/cabecalho-pagina-bg.jpg');
+    background-attachment: fixed;
+    text-shadow: 2px 2px black;
+    color: #fff;
+    padding-top: 220px;
+    padding-bottom: 80px;
+    &__titulo{
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    /* Fzendo a linha embaixo do Sobre nós, utilizando pseudo elemento */
+    &__titulo::after{
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: #fff;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Garantindo que todas as imagens tenham uma largura maxima definida */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    font-family: "Source Sans Pro";
+}

@@ -1,0 +1,35 @@
+// Importando os arquivos da pasta abstracts
+@import 'abstracts/cores';
+@import 'abstracts/breakpoints';
+
+// Importando os arquivos da pasta base
+@import 'base/normalize';
+@import 'base/fontes';
+@import 'base/meu-reset';
+
+// Importando os arquivos da pasta layout
+@import 'layout/container';
+@import 'layout/cabecalho';
+@import 'layout/rodape';
+@import 'layout/alinhamento-texto';
+@import 'layout/alinhamento-img';
+
+// Importando os arquivos da pasta components
+@import 'components/depoimentos';
+@import 'components/formulario';
+@import 'components/logo';
+@import 'components/mapa';
+@import 'components/menu-principal';
+@import 'components/pagina-cabecalho';
+@import 'components/pagina-conteudo'; 
+@import 'components/servicos';
+
+// Importando os arquivos da pasta pages
+@import 'pages/contato';
+@import 'pages/pagina-inicial';
+@import 'pages/porfolio';
+@import 'pages/sobre-nos';
+
+// Importando os arquivos da pasta vendors
+@import 'vendors/slick.scss';
+@import 'vendors/slick-theme.scss';

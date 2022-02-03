@@ -1,0 +1,23 @@
+.cabecalho{
+    background: #ffff;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0px 0px 7px rgba(0,0,0,0.2);
+    /* Deixando o meu menu no canto superior direito, antes estava no canto esquerdo */
+    @media(min-width: $breakpoint-md){
+        min-height: 100px;
+        .logo{
+            float: left;
+            margin-top: 5px;
+        }
+        .menu-principal{
+            float: right;
+            margin-top: 28px;
+            &__lista{
+                margin-bottom: 0;
+            }
+        }
+    }
+}   

@@ -1,0 +1,12 @@
+.logo{
+    background-image: url("../img/logo/logo-1.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 330px;
+    height: 93px;
+    text-indent: -9999px;
+    margin: 0;
+    &--branco{
+        background-image: url("../img/logo/logo-branco.png");
+    }
+}

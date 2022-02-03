@@ -1,0 +1,12 @@
+.pagina-contato{
+    .pagina-conteudo{
+        @media(min-width: $breakpoint-md){
+            padding-right: 75px;
+            padding-left: 75px;
+        }
+    }
+}
+
+.contato__dados{
+    margin-top: 70px;
+}

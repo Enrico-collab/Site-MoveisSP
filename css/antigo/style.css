@@ -1,0 +1,152 @@
+/* Reset */
+*{
+    box-sizing: border-box;
+}
+
+/* Garantindo que todas as imagens tenham uma largura maxima definida */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+@font-face{
+    font-family: "Source Sans Pro";
+    src: url('../fonts/source-sans-pro/SourceSansPro-Regular.otf');
+}
+
+@font-face{
+    font-family: "Source Sans Pro";
+    src: url('../fonts/source-sans-pro/SourceSansPro-Bold.otf');
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: "Source Sans Pro";
+    src: url('../fonts/source-sans-pro/SourceSansPro-BoldIt.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body{
+    font-family: "Source Sans Pro";
+}
+
+/* Cabeçalho */
+.cabecalho{
+    background: #ffff;
+    padding: 15px;
+}
+
+/* Logo */
+.logo{
+    background-image: url("../img/logo/Logo.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 330px;
+    height: 60px;
+    text-indent: -9999px;
+    margin: 0;
+}
+
+/* Classe modificadora para o logo passar a ser branco no rodape */
+.logo--branco{
+    background-image: url("../img/logotipo-branco.png");
+}
+
+/* Menu principal */
+.menu-principal__btn{
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    background-color:  #fff;
+    background-image: url('../img/menuprincipal-btn-bg.png'); /* inserindo a imagem de: 3 pontinhos (menu) e fechar (x)*/
+    background-repeat: no-repeat;
+    background-position: 5px 5px; /* ajustando minha imagem de 3pontinhos (menu) e fechar (x), dentro do meu "botao" */
+    border-color: #c4c4c4;
+    border-style: solid;
+    border-radius: 5px;
+    cursor: pointer;
+    /* colocando meu menu 3pontinhos no canto direito */
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+/* Criando uma classe modificadora para quando clicar no menu 3 pontinhos, a imagem do botao mude de posicao, passando a ser um X de fechar o menu */
+.menu-principal__btn--fechar{
+    background-position: -48px 7px;
+
+}
+
+.menu-principal__lista{
+    padding: 0;
+    list-style: none;
+}
+
+.menu-principal__item{
+    text-decoration: none;
+    font-weight: bold;
+    color: #343434;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 18px;
+    
+}
+
+/*Criando uma classe modificadora para os menus, ele mudará de cor de acordo com pagina que o usuario esta*/
+.menu-principal__item--atual{
+    color: #f44242;
+}
+
+/* Inicio Rodape */
+.rodape{
+    color: #fff;
+}
+
+.rodape .logo{
+    margin-bottom: 20px;
+}
+
+.rodape__linha-1{
+    background-color: #272525;
+    background-image: url('../img/rodape-bg.jpg');
+    background-size: cover;
+    padding: 15px;
+}
+
+.rodape__linha-2{
+    background-color:#000;
+    text-align: center;
+    padding: 15px;
+}
+
+.rodape__coluna{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.rodape__titulo{
+    border-bottom: 1px solid #fff;
+    padding: 0 10px 10px 10px;
+    font-size: 18px;
+}
+
+.rodape__lista-links{
+    padding: 0;
+    list-style: none;
+}
+
+.rodape__lista-links__item{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Adicionando os simbolos de maior que..ao lado dos links */
+.rodape__lista-links__item::before{
+    content: '>';
+    margin-right: 8px;
+    color: #f44242;
+}
